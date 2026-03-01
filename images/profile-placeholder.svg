@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE8F0"/>
+      <stop offset="50%" style="stop-color:#E8DEFF"/>
+      <stop offset="100%" style="stop-color:#B8F0D8"/>
+    </linearGradient>
+    <linearGradient id="circle" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F4A6B8"/>
+      <stop offset="100%" style="stop-color:#C5B4E3"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#bg)" rx="20"/>
+  <circle cx="200" cy="180" r="80" fill="url(#circle)" opacity="0.6"/>
+  <ellipse cx="200" cy="320" rx="120" ry="140" fill="url(#circle)" opacity="0.45"/>
+  <text x="200" y="450" font-family="Georgia, serif" font-size="24" fill="#8B7A9E" text-anchor="middle" font-style="italic">Tambahkan foto Anda</text>
+</svg>

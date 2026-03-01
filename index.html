@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mey Nur Afni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">Mey Nur Afni</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">Tentang</a></li>
+        <li><a href="#skills" class="nav-link">Keahlian</a></li>
+        <li><a href="#education" class="nav-link">Pendidikan</a></li>
+        <li><a href="#experience" class="nav-link">Pengalaman</a></li>
+        <li><a href="#portfolio" class="nav-link">Karya</a></li>
+        <li><a href="#contact" class="nav-link">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-shape hero-shape-1"></div>
+      <div class="hero-shape hero-shape-2"></div>
+      <div class="hero-shape hero-shape-3"></div>
+    </div>
+    <div class="hero-content container">
+      <p class="hero-greeting"><strong>Halo, saya</strong></p>
+      <h1 class="hero-title">Mey Nur Afni</h1>
+      
+      <p class="hero-desc">Seorang lulusan D3 Manajemen Informatika yang memiliki passion di bidang teknologi dan siap berkontribusi serta terus berkembang di dunia profesional.</p>
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn btn-primary">Lihat Karya</a>
+        <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll ke bawah</span>
+      <div class="scroll-indicator"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tentang Saya</span>
+        <h2 class="section-title">Cerita Singkat</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="about-image">
+            <img
+              src="images/profil.jpg"
+              alt="Foto profil"
+              class="about-photo"
+              onerror="this.onerror=null; this.src='images/profile-placeholder.svg';"
+            >
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="about-text">
+            Saya adalah lulusan Diploma 3 Manajemen Informatika yang memiliki ketertarikan 
+            besar di bidang Web Development dan Data Management. Saya terbiasa mengembangkan 
+            aplikasi berbasis web serta mengelola data secara terstruktur untuk menghasilkan 
+            solusi yang efektif dan efisien. Memiliki pemahaman yang baik dalam logika pemrograman, 
+            pengelolaan database, serta sistem informasi, saya selalu berusaha membangun aplikasi 
+            yang tidak hanya berfungsi dengan baik tetapi juga mudah digunakan. Saya dikenal sebagai 
+            pribadi yang teliti, sistematis, dan memiliki semangat belajar tinggi, serta mampu 
+            beradaptasi dengan cepat terhadap teknologi maupun lingkungan kerja baru.
+          </p>
+          
+          <!--<div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Tahun Pengalaman</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Proyek Selesai</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">30+</span>
+              <span class="stat-label">Klien Bahagia</span>
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Keahlian</span>
+        <h2 class="section-title">Apa yang Saya Kuasai</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">✨</div>
+          <h3 class="skill-title">UI/UX Design</h3>
+          <p class="skill-desc">Wireframe, prototype, dan desain antarmuka yang user-friendly.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">📋</div>
+          <h3 class="skill-title">Administrasi & Data Management</h3>
+          <p class="skill-desc">Pengolahan data dan administrasi berbasis sistem untuk meningkatkan efisiensi kerja.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3 class="skill-title">Frontend Development</h3>
+          <p class="skill-desc">HTML, CSS, JavaScript — membawa desain ke kehidupan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pendidikan</span>
+        <h2 class="section-title">Riwayat Pendidikan</h2>
+      </div>
+      <div class="education-list">
+        <div class="education-item">
+          <div class="education-icon">🎓</div>
+          <div class="education-content">
+            <h3 class="education-title">D3 Manajemen Informatika</h3>
+            <p class="education-school">Politeknik Negeri Jember</p>
+            <p class="education-year">2025</p>
+          </div>
+        </div>
+        <!-- Tambahkan riwayat pendidikan lain di sini -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pengalaman</span>
+        <h2 class="section-title">Pengalaman Kerja</h2>
+      </div>
+      <div class="experience-list">
+        <div class="experience-item">
+          <div class="experience-icon">🛍️</div>
+          <div class="experience-content">
+            <h3 class="experience-title">Praktek Kerja Lapang - Pramuniaga</h3>
+            <p class="experience-company">Vnetmedia</p>
+            <p class="experience-period">Mei 2021 – Oktober 2021</p>
+            <p class="experience-desc">Bertanggung jawab dalam pelayanan pelanggan, pengelolaan 
+              pesanan percetakan, serta administrasi dan pencatatan data transaksi.</p>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="experience-icon">🖥️</div>
+          <div class="experience-content">
+            <h3 class="experience-title">Internship - Staff IT</h3>
+            <p class="experience-company">PT. Sasa Inti, Tbk.</p>
+            <p class="experience-period">Agustus 2024 - Desember 2024</p>
+            <p class="experience-desc">Membantu pengelolaan dan pemeliharaan sistem komputer, pengolahan data, 
+              serta memberikan dukungan teknis terkait perangkat keras dan perangkat lunak.</p>
+          </div>
+        </div>
+        
+        <div class="experience-item">
+          <div class="experience-icon">📁</div>
+          <div class="experience-content">
+            <h3 class="experience-title">Staff Admin</h3>
+            <p class="experience-company">Koperasi Panen Pangan Nusantara</p>
+            <p class="experience-period">2025 - Sekarang</p>
+            <p class="experience-desc">Melakukan pengelolaan dokumen dan data administrasi, penginputan data, 
+              serta membantu proses administrasi operasional perusahaan secara rapi dan terstruktur.</p>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"></span>
+        <h2 class="section-title">Projek</h2>
+      </div>
+      <div class="portfolio-grid">
+        <article class="portfolio-card">
+          <div class="portfolio-image">
+            <img
+              src="images/projek5.png"
+              alt="E-Commerce Fashion"
+              onerror="this.onerror=null; this.src='images/portfolio-placeholder.svg';"
+            >
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title"><strong>Web Inventory Barang IT</strong></h3>
+            <p class="portfolio-category">Sistem inventaris berbasis web menggunakan Laravel dan MySQL dengan fitur CRUD.</p>
+          </div>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-image">
+            <img
+              src="images/projek2.jpg"
+              alt="Aplikasi Wellness"
+              onerror="this.onerror=null; this.src='images/portfolio-placeholder.svg';"
+            >
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title"><strong>Game Edukasi Dasar Tajwid Berbasis Android</strong></h3>
+            <p class="portfolio-category">Game edukasi untuk belajar tajwid pada anak-anak yang dirancang menggunakan Unity 2D dan database MySQL.</p>
+          </div>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-image">
+            <img
+              src="images/projek1.png"
+              alt="Website Portofolio Kreatif"
+              onerror="this.onerror=null; this.src='images/portfolio-placeholder.svg';"
+            >
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title"><strong>E-Presensi Mobile App</strong></h3>
+            <p class="portfolio-category">Aplikasi presensi berbasis Flutter dengan fitur riwayat kehadiran dan GPS tracking.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Kontak</span>
+        <h2 class="section-title">Mari Terhubung</h2>
+        <p class="section-desc">Saya terbuka untuk kesempatan kerja full-time maupun freelance.</p>
+      </div>
+      <div class="contact-content">
+        <form action="https://formsubmit.co/meynurafni11@gmail.com" method="POST">
+          <div class="form-group">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@contoh.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tulis pesan atau informasi terkait peluang kerja dan kolaborasi..." required></textarea>
+          </div>
+
+          <!-- Anti spam -->
+          <input type="hidden" name="_captcha" value="false">
+
+          <button type="submit" class="btn btn-primary btn-full">Kirim Pesan</button>
+        </form>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a href="mailto:hello@contoh.com">meynurafni11@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Instagram</span>
+            <a href="https://www.instagram.com/meynurafni_/" target="_blank" rel="noopener">meynurafni_</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/meynurafni/" target="_blank" rel="noopener">mey nur afni</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">❤️Mey Nur Afni</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

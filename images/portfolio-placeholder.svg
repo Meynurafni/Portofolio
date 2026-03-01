@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="pg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8DEFF"/>
+      <stop offset="50%" style="stop-color:#FFDCC4"/>
+      <stop offset="100%" style="stop-color:#B5D8F0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#pg)"/>
+  <rect x="120" y="80" width="160" height="140" rx="8" fill="#C5B4E3" opacity="0.35"/>
+  <circle cx="200" cy="150" r="30" fill="#F4A6B8" opacity="0.45"/>
+  <text x="200" y="240" font-family="Georgia, serif" font-size="18" fill="#8B7A9E" text-anchor="middle" font-style="italic">Gambar proyek</text>
+</svg>
