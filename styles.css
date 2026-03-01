@@ -748,6 +748,56 @@ ul {
   color: var(--color-text-light);
 }
 
+
+/* ========== Certificate Section ========== */
+/* CERTIFICATE */
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+.certificate-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  max-width: 320px;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+}
+
+.certificate-image img {
+  width: 100%;
+  height: 180px; /* ukuran PAS */
+  object-fit: cover;
+}
+
+.certificate-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.certificate-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.certificate-org {
+  font-size: 14px;
+  color: #666;
+}
+
+.certificate-year {
+  font-size: 13px;
+  color: #999;
+}
+
+
 /* ========== Contact Section ========== */
 .contact-content {
   display: grid;
@@ -957,5 +1007,19 @@ ul {
 
   .section-header {
     margin-bottom: 2rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .certificate-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* HP */
+@media (max-width: 600px) {
+  .certificate-grid {
+    grid-template-columns: 1fr;
   }
 }
