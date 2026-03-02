@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start local server (8080)",
+      "type": "shell",
+      "command": "npx",
+      "args": ["--yes", "http-server", ".", "-p", "8080", "-c-1"],
+      "isBackground": true,
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated"
+      },
+      "problemMatcher": {
+        "pattern": [
+          {
+            "regexp": ".+"
+          }
+        ],
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Starting up http-server",
+          "endsPattern": "Hit CTRL-C to stop"
+        }
+      }
+    }
+  ]
+}
+
