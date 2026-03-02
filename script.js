@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Sparkle emoji
     const sparkle = document.createElement("div");
     sparkle.classList.add("sparkle");
-    sparkle.innerHTML = "✨";
+    sparkle.innerHTML = "❤️";
     sparkle.style.left = e.clientX + "px";
     sparkle.style.top = e.clientY + "px";
     document.body.appendChild(sparkle);
