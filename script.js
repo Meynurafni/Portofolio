@@ -305,5 +305,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+  // ========== Nafbar responsif ==========
+  const navToggle = document.getElementById("navToggle");
+const navMenu = document.getElementById("navMenu");
+const navLinks = document.querySelectorAll(".nav-link");
+
+navToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+
+// Tutup menu saat klik link (mobile)
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+  });
+});
 
 });
