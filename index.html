@@ -459,7 +459,14 @@
         <p class="section-desc">Saya terbuka untuk kesempatan kerja full-time maupun freelance.</p>
       </div>
       <div class="contact-content">
-        <form class="contact-form" action="https://formsubmit.co/meynurafni11@gmail.com" method="POST">
+        <!--<form class="contact-form" action="https://formsubmit.co/meynurafni11@gmail.com" method="POST">-->
+        <!--<form action="https://formsubmit.co/meynurafni11@gmail.com" method="POST">-->
+          <form id="contactForm" class="contact-form">
+
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="Pesan Baru dari Website Portofolio">
+  <input type="hidden" name="_template" value="table">
+
           <div class="form-group">
             <label for="name">Nama</label>
             <input type="text" id="name" name="name" placeholder="Nama Anda" required>
@@ -482,7 +489,7 @@
         <div class="contact-info">
           <div class="contact-item">
             <span class="contact-label">Email</span>
-            <a href="mailto:hello@contoh.com">meynurafni11@gmail.com</a>
+            <a href="mailto:meynurafni11@gmail.com">meynurafni11@gmail.com</a>
           </div>
           <div class="contact-item">
             <span class="contact-label">Instagram</span>
@@ -505,6 +512,20 @@
   </footer>
 
   <script src="script.js"></script>
+
+<!-- Success Popup -->
+<div id="successPopup" class="popup-overlay">
+  <div class="popup-box">
+    <button class="popup-close" id="closePopup" aria-label="Tutup popup">
+      ✖️
+    </button>
+    <div class="popup-icon">😊</div>
+    <h3>Pesan Berhasil Dikirim!</h3>
+    <p>Terima kasih sudah menghubungi saya. Saya akan segera membalas pesan Anda.</p>
+  </div>
+</div>
+
+
 </body>
 
 </html>

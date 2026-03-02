@@ -305,7 +305,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-  // ========== Nafbar responsif ==========
-  
+  // ========== pesan ==========
+
+  const form = document.getElementById("contactForm");
+const popup = document.getElementById("successPopup");
+const closePopup = document.getElementById("closePopup");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  fetch("https://formsubmit.co/ajax/meynurafni11@gmail.com", {
+    method: "POST",
+    body: formData,
+  })
+  .then(response => response.json())
+  .then(data => {
+    popup.classList.add("active");
+    form.reset();
+  })
+  .catch(error => console.error("Error:", error));
+});
+
+closePopup.addEventListener("click", function () {
+  popup.classList.remove("active");
+});
 
 });
